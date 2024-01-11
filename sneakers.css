@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+}
+body {
+    background-color: whitesmoke;
+}
+.container {
+    margin: 20px 0px;
+}
+#itemDesc {
+    width: 38%;
+    height: 20%;
+    background: orange;
+    padding-left: 12px;
+    border-radius: 0px 0px 0px 15px;
+}
+#itemDesc p {
+    font-size: .8rem;
+    margin: 5px 0px 0px 5px;
+    color: whitesmoke;
+}
+#itemDesc h4 {
+    margin: 6px 0px 0px 0px;
+    font-family: oblique;
+    font-size: 1.5rem;
+}
+.clothesRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.clothesRow img {
+    width: 200px;
+    height: 200px;
+    border-radius: 0px 10px 10px 0px;
+}
+h2 {
+    margin-top: 8px;
+}
+h2 span {
+    color: green;
+}
+h2 sup {
+    color: white;
+    font-size: 1rem;
+}
+#addToCart {
+    background-color: bisque;
+    color: blue;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 7px 4px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
