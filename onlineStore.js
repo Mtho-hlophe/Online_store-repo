@@ -291,4 +291,39 @@ function showImageCollection3() {
     }
 }
 
+let sneakersButton = document.querySelectorAll('#sneakersButton')
+
+function goToSneakerPage() {
+    for(let i =0; i < sneakersButton.length; i++){
+    sneakersButton[i].addEventListener('click', ()=>{
+    window.open('https://gubevuclothing.netlify.app/sneakers.html')
+    })
+    }
+}
+
+goToSneakerPage()
+
+let shirtsButton = document.querySelectorAll('#shirtsButton')
+
+function goToShirtPage() {
+    for(let i =0; i < shirtsButton.length; i++){
+    shirtsButton[i].addEventListener('click', ()=>{
+    window.open('https://gubevuclothing.netlify.app/shirts.html')
+    })
+    }
+}
+
+goToShirtPage()
+
+let jacketsButton = document.querySelectorAll('#jacketsButton')
+
+function goToJacketPage() {
+    for(let i =0; i < jacketsButton.length; i++){
+    jacketsButton[i].addEventListener('click', ()=>{
+    window.open('https://gubevuclothing.netlify.app/jackets.html')
+    })
+    }
+}
+
+goToJacketPage()
 
