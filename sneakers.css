@@ -6,6 +6,10 @@
 body {
     background-color: whitesmoke;
 }
+header {
+    display:flex;
+    justify-content:space-between;
+}
 header div {
     display: flex;
     align-items: flex-start;
@@ -55,6 +59,7 @@ header div {
     width: 200px;
     height: 200px;
     border-radius: 0px 10px 10px 0px;
+    margin-top: 40px;
 }
 h2 {
     margin-top: 8px;
