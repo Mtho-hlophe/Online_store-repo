@@ -37,7 +37,7 @@ header div {
     border-radius: 0px 0px 0px 35px;
     position: absolute;
     margin: 30px 0px 0px 50% ;
-    z-index: -1;
+    z-index: 1;
     border-top: 2px solid white;
 }
 #itemDesc p {
@@ -54,6 +54,7 @@ header div {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    padding:10px 0px;
 }
 .clothesRow img {
     width: 200px;
