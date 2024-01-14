@@ -19,7 +19,21 @@ header div {
     height: 50px;
     border-radius: 0px 15px 0px 15px;
 }
-#cart{
+#cart {
+    width:100%
+}
+#cartItem{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding: 10px 0px;
+    
+}
+#cart div img{
+    height:70px;
+    width: 100px;
+}
+#cartIcon{
     width: 50px;
     height: 50px;
 }
