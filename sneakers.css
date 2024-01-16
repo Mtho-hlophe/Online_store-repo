@@ -4,7 +4,7 @@
     font-family: Montserrat, sans-serif;
 }
 body {
-    background-color: whitesmoke;
+    background-color: lavender;
 }
 header {
     display:flex;
@@ -42,6 +42,66 @@ header div {
     font-size: 1.3rem;
     font-weight: 700;
 }
+.container {
+    margin: 8% 15%;
+}
+#itemDesc {
+    background: rgba(90,210,112,.5);
+    padding:0px 4px 20px 30px;
+    border-radius: 0px 0px 0px 35px;
+    position: absolute;
+    margin: 60px 0px 0px 30% ;
+    z-index: 1;
+    border-top: 2px solid white;
+}
+#itemDesc p {
+    font-size: .8rem;
+    margin: 5px 0px 0px 5px;
+    color: whitesmoke;
+}
+#itemDesc h4 {
+    margin: 6px 0px 0px 0px;
+    font-family: oblique;
+    font-size: 1.5rem;
+}
+.clothesRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding:10px 0px;
+}
+.clothesRow img {
+    width: 400px;
+    height: 300px;
+    border-radius: 18px;
+    margin-top: 40px;
+}
+h2 {
+    margin-top: 8px;
+}
+h2 span {
+    color: green;
+}
+h2 sup {
+    color: white;
+    font-size: 1rem;
+}
+#addToCart {
+    background-color: bisque;
+    color: blue;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 7px 4px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+
+/* css media queries for mobile devices*/
+
+@media(max-width: 436px){
+
 .container {
     margin: 20px 0px;
 }
@@ -96,4 +156,7 @@ h2 sup {
     display: flex;
     justify-content: center;
     font-weight: 600;
+}
+    
+    
 }
