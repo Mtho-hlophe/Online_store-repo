@@ -47,7 +47,7 @@ header div {
 }
 #cart {
     width:100%
-    display: ;
+    display: none;
 }
 #cartItem{
     display:flex;
