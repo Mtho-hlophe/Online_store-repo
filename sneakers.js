@@ -12,14 +12,7 @@ for(let i = 0; i<addToCartBtn.length; i++){
        var cartBtn =  addToCartBtn[i]
        cartBtn.addEventListener('click', cartAddFunc)
 }
-function deleteItem() {
-           
-    const rmvBtn = document.querySelectorAll("#remove")
-    for(let i = 0; i < rmvBtn.length; i++){
-         rmvBtn[i].addEventListener("click", () => {
-         rmvBtn[i].parentElement.remove()
-      })
-    }
+
        
 function cartAddFunc(e) {   
     const id = e.target.className
