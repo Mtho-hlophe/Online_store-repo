@@ -78,7 +78,7 @@ header div {
     margin: 6% 15%;
 }
 #itemDesc {
-    background: rgba(90,210,112,.5);
+    background: rgba(210,210,112,.5);
     padding:0px 4px 20px 30px;
     border-radius: 0px 0px 0px 35px;
     position: absolute;
@@ -146,7 +146,7 @@ header{
     margin: 20px 2px;
 }
 #itemDesc {
-    background: rgba(210,210,210,.5);
+    background: rgba(240,240,240,.5);
     padding:0px 4px 20px 30px;
     border-radius: 0px 0px 0px 35px;
     position: absolute;
