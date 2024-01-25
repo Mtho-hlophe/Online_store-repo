@@ -59,3 +59,14 @@ function notify() {
    }, 3300)
     
 }
+let cartIcon = document.getElementById('cartIcon')
+cartIcon.addEventListener( 'click', cartToggleDisplay )
+
+function cartToggleDisplay() {
+    if( cart.style.display === 'none') {
+        cart.style.display = 'block'
+    }
+    else{
+        cart.style.display = 'none'
+    }
+ }
