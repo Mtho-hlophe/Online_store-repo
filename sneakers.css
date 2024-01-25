@@ -67,7 +67,6 @@ header div {
     border-radius: 0px 0px 0px 35px;
     position: absolute;
     margin: 60px 0px 0px 30% ;
-    z-index: 1;
     border-top: 2px solid white;
 }
 #itemDesc p {
@@ -127,7 +126,6 @@ h2 sup {
     border-radius: 0px 0px 0px 35px;
     position: absolute;
     margin: 30px 0px 0px 50% ;
-    z-index: 1;
     border-top: 2px solid white;
 }
 #itemDesc p {
@@ -151,6 +149,7 @@ h2 sup {
     height: 200px;
     border-radius: 0px 10px 10px 0px;
     margin-top: 40px;
+    z-index: 1;
 }
 h2 {
     margin-top: 8px;
