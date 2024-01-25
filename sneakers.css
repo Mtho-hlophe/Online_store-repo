@@ -37,6 +37,7 @@ header div {
 }
 #cart {
     width:100%
+    color: azure;
 }
 #cartItem{
     display:flex;
