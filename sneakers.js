@@ -12,11 +12,12 @@ for(let i = 0; i<addToCartBtn.length; i++){
        var cartBtn =  addToCartBtn[i]
        cartBtn.addEventListener('click', cartAddFunc)
 }
-       
+let count = 0
+
 function cartAddFunc(e) {   
     const id = e.target.className
     
-    var itemOnCart = document.createElement('div')
+    let itemOnCart = document.createElement('div')
     cart.appendChild(itemOnCart)
     itemOnCart.classList.add('cart')
     itemOnCart.innerHTML = `<div id="cartItem">
@@ -31,7 +32,8 @@ function cartAddFunc(e) {
                   </select>
                 <button id="remove" onClick = "deleteItem()">Remove</button>
             </div>`
-    
+    count++
+    cartCount.innerText = count
 }
 
  function deleteItem() {
@@ -42,5 +44,7 @@ function cartAddFunc(e) {
          rmvBtn[i].parentElement.remove()
       })
     }
+    count = rmvBtn.length-1
+    cartCount.innerText = count
 }
 
