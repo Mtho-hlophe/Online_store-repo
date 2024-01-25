@@ -5,17 +5,23 @@ let addToCartBtn = document.querySelectorAll('#addToCart')
 
 const priceSpans = document.querySelectorAll('#price')
 const imageSrc = Array.from(document.querySelectorAll('img'))
-imageSrc.shift(0)
-imageSrc.shift(0)
+imageSrc.shift(0); imageSrc.shift(0)
 
 for(let i = 0; i<addToCartBtn.length; i++){
        // console.log(addToCartBtn)   
        var cartBtn =  addToCartBtn[i]
        cartBtn.addEventListener('click', cartAddFunc)
 }
-
-function cartAddFunc(e) {
-    
+function deleteItem() {
+           
+    const rmvBtn = document.querySelectorAll("#remove")
+    for(let i = 0; i < rmvBtn.length; i++){
+         rmvBtn[i].addEventListener("click", () => {
+         rmvBtn[i].parentElement.remove()
+      })
+    }
+       
+function cartAddFunc(e) {   
     const id = e.target.className
     
     var itemOnCart = document.createElement('div')
@@ -31,15 +37,8 @@ function cartAddFunc(e) {
                      <option>4</option>
                      <option>5</option>
                   </select>
-                <button id="remove">Remove</button>
+                <button id="remove" onClick = "deleteItem()">Remove</button>
             </div>`
-    
-    const removeBtn = document.querySelectorAll('#remove')
-    for (let j = 0; j < removeBtn.length; j++) {
-        removeBtn[j].addEventListener('click', ()=>{
-            removeBtn[j].parentElement.remove()
-        })
-    }
     
 }
 
