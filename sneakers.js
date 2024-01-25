@@ -56,6 +56,6 @@ function notify() {
     
     setTimeout( () => {
         notifyMessage.style.display = "none"
-   }, 2000)
+   }, 3300)
     
 }
