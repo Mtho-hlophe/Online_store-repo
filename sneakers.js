@@ -34,11 +34,13 @@ function cartAddFunc(e) {
     
 }
 
-function deleteItem() {
+ function deleteItem() {
            
     const rmvBtn = document.querySelectorAll("#remove")
     for(let i = 0; i < rmvBtn.length; i++){
          rmvBtn[i].addEventListener("click", () => {
          rmvBtn[i].parentElement.remove()
       })
-                                    }
+    }
+}
+
