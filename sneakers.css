@@ -27,6 +27,8 @@ select {
 #cartItem div{
     color: azure;
 }
+#cartIcon {
+    cursor: pointer;
 body {
     background-color: lavender;
 }
@@ -45,6 +47,7 @@ header div {
 }
 #cart {
     width:100%
+    display: none;
 }
 #cartItem{
     display:flex;
