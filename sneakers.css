@@ -3,6 +3,9 @@
     padding: 0;
     font-family: Montserrat, sans-serif;
 }
+#cartCount {
+    color: red;
+}
 #notify {
     position: fixed;
     top:0;
@@ -17,9 +20,9 @@
 }
 @keyframes countdown {
     from{ 
-        right : 0px; }
+        right : 8px; }
     to{
-       right : 0px; }
+       right : 8px; }
 }
 select {
     color: azure;
