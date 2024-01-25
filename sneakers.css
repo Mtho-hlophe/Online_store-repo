@@ -11,7 +11,13 @@
     color: white;
     text-align: center;
     display: none;
-    animation: countdown 2s;
+    animation: countdown 3s;
+}
+@keyframes countdown {
+    from{ 
+        width : 90px; }
+    to{
+       width : 100%; }
 }
 body {
     background-color: lavender;
