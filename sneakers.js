@@ -46,5 +46,16 @@ function cartAddFunc(e) {
     }
     count = rmvBtn.length-1
     cartCount.innerText = count
+    notify()
 }
 
+var notifyMessage = document.getElementById("notify")
+
+function notify() {
+    notifyMessage.style.display = "block"
+    
+    setTimeout( () => {
+        notifyMessage.style.display = "none"
+   }, 2000)
+    
+}
