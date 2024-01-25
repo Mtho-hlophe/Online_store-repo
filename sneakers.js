@@ -34,6 +34,7 @@ function cartAddFunc(e) {
             </div>`
     count++
     cartCount.innerText = count
+    notify()
 }
 
  function deleteItem() {
@@ -46,7 +47,6 @@ function cartAddFunc(e) {
     }
     count = rmvBtn.length-1
     cartCount.innerText = count
-    notify()
 }
 
 var notifyMessage = document.getElementById("notify")
