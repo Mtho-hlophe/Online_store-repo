@@ -146,7 +146,7 @@ header{
     margin: 20px 2px;
 }
 #itemDesc {
-    background: rgba(90,210,112,.5);
+    background: rgba(210,210,210,.5);
     padding:0px 4px 20px 30px;
     border-radius: 0px 0px 0px 35px;
     position: absolute;
