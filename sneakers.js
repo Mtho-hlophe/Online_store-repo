@@ -30,11 +30,15 @@ function cartAddFunc(e) {
                      <option>4</option>
                      <option>5</option>
                   </select>
-                <button id="remove" onClick = "deleteItem()">Remove</button>
+                <button id="remove" onClick = "deleteItem()">Remove<span id"removeRef"></span></button>
             </div>`
+
+         addToCartBtn[id].innerText = "item added"
+         addToCartBtn[id].style.color = "green"
+         addToCartBtn[id].removeEventListener('click', cartAddFunc)
+   
     count++
     cartCount.innerText = count
-    notify()
 }
 
  function deleteItem() {
@@ -42,6 +46,11 @@ function cartAddFunc(e) {
     const rmvBtn = document.querySelectorAll("#remove")
     for(let i = 0; i < rmvBtn.length; i++){
          rmvBtn[i].addEventListener("click", () => {
+         const removeRef = document.querySelectorAll("#removeRef")
+         removeRef.innerText = i  
+             
+         addToCartBtn[removeRef.innerText].addEventListener('click', cartAddFunc)
+         addToCartBtn[removeRef.innerText].innerText = "add to cart"
          rmvBtn[i].parentElement.remove()
       })
     }
