@@ -79,3 +79,4 @@ function cartToggleDisplay() {
         cart.style.display = 'none'
     }
 }
+cartToggleDisplay()
