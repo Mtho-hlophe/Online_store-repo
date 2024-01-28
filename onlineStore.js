@@ -15,6 +15,8 @@ body.addEventListener('click', (e)=>{
     }
 })
 
+// repetetive code is definitely not neat code. 
+
 var imageDiv = document.querySelector('.collection1')
 var imageDiv2 = document.querySelector('.collection2')
 var imageDiv3 = document.querySelector('.collection3')
